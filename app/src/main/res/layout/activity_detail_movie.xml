@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_movie_poster"
+        android:layout_width="200dp"
+        android:layout_height="250dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/movies_poster"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="92dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/background_text"
+        android:gravity="center"
+        android:text="@string/movie_title"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/iv_movie_poster"
+        app:layout_constraintTop_toTopOf="@+id/iv_movie_poster" />
+
+    <TextView
+        android:id="@+id/tv_title_value"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title"
+        tools:text="Shang-Chi and the Legend of Ten Rings" />
+
+    <TextView
+        android:id="@+id/tv_director"
+        android:layout_width="92dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/background_text"
+        android:gravity="center"
+        android:text="@string/movie_directors"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/iv_movie_poster"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_value" />
+
+    <TextView
+        android:id="@+id/tv_director_value"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_director"
+        tools:text="Marcus Rashford" />
+
+    <TextView
+        android:id="@+id/tv_genre"
+        android:layout_width="92dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/background_text"
+        android:gravity="center"
+        android:text="@string/movie_genre"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/iv_movie_poster"
+        app:layout_constraintTop_toBottomOf="@+id/tv_director_value" />
+
+    <TextView
+        android:id="@+id/tv_genre_value"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_genre"
+        tools:text="Action" />
+
+    <TextView
+        android:id="@+id/tv_budget"
+        android:layout_width="92dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/background_text"
+        android:gravity="center"
+        android:text="@string/movie_budget"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/iv_movie_poster"
+        app:layout_constraintTop_toBottomOf="@+id/tv_genre_value" />
+
+    <TextView
+        android:id="@+id/tv_budget_value"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_budget"
+        tools:text="$15 million" />
+
+    <TextView
+        android:id="@+id/tv_description"
+        android:layout_width="112dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/background_text"
+        android:gravity="center"
+        android:text="@string/movie_description"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_movie_poster" />
+
+    <TextView
+        android:id="@+id/tv_description_value"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_description"
+        tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultricies tristique bibendum. Nunc sagittis interdum ipsum, ut posuere orci elementum quis. Vestibulum vehicula purus nec commodo viverra. Sed vulputate maximus aliquet. Maecenas suscipit volutpat rhoncus. Praesent elementum facilisis sapien, id venenatis nibh gravida quis. Maecenas eu lobortis sem, sit amet ornare magna. Sed luctus, ex id suscipit fermentum, erat arcu convallis mauris, a condimentum orci dui eget magna. Pellentesque nec quam quis metus malesuada suscipit. Maecenas lacus ligula, condimentum eu sagittis non, luctus nec magna." />
+
+    <TextView
+        android:id="@+id/tv_year"
+        android:layout_width="92dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/background_text"
+        android:gravity="center"
+        android:text="@string/year"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_description_value" />
+
+    <TextView
+        android:id="@+id/tv_year_value"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_year"
+        tools:text="2021" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/btn_share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/share"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:chipBackgroundColor="@color/secondary"
+        app:chipIcon="@drawable/ic_share"
+        app:chipIconTint="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_year_value"
+        tools:ignore="TextContrastCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

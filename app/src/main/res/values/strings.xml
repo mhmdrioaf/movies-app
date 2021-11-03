@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Movies</string>
+    <string name="title_activity_detail_movie">DetailMovieActivity</string>
+    <!-- Strings used for fragments for navigation -->
+
+    <string name="movies_poster">Movies Poster</string>
+    <string name="movie_title">Title</string>
+    <string name="movie_directors">Directors</string>
+    <string name="movie_genre">Genre</string>
+    <string name="movie_budget">Budget</string>
+    <string name="movie_description">Description</string>
+    <string name="share">Share</string>
+    <string name="gap">•</string>
+    
+    <string name="movies">Movies</string>
+    <string name="tv_show">Tv Shows</string>
+    <string name="year">Year</string>
+    <string name="country">Country</string>
+    <string name="seasons">Seasons</string>
+</resources>
